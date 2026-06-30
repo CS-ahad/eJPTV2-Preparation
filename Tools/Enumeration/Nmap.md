@@ -27,7 +27,6 @@ sudo apt install nmap
 *Description:*
 Installs Nmap on Debian-based Linux distributions such as Kali Linux.
 
-###output
 <img width="823" height="181" alt="nmap install" src="https://github.com/user-attachments/assets/c8d6c5c9-7654-47c2-aedd-6cb6724f030e" />
 
 ### Verify Installation
@@ -35,6 +34,11 @@ Installs Nmap on Debian-based Linux distributions such as Kali Linux.
 ```bash
 nmap --version
 ```
+
+
+*Description:*
+Displays the installed version of Nmap to verify that the installation was successful.
+
 <img width="1125" height="141" alt="nmap --ver" src="https://github.com/user-attachments/assets/ff44a8a3-3628-48c8-be4f-d0cdac1a5d3e" />
 
 ---
@@ -44,6 +48,9 @@ nmap --version
 ```bash
 nmap [Options] <Target>
 ```
+
+*Description:*
+The general syntax used to run Nmap against a target.
 
 Example:
 
