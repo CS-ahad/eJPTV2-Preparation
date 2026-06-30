@@ -23,14 +23,14 @@ Nmap (Network Mapper) is an open-source tool used for network discovery, host id
 ```bash
 sudo apt install nmap
 ```
-<img width="823" height="186" alt="nmap install " src="https://github.com/user-attachments/assets/72dc3a3f-cc31-45a8-9049-77d30fa42cc0" />
+<img width="823" height="181" alt="nmap install" src="https://github.com/user-attachments/assets/c8d6c5c9-7654-47c2-aedd-6cb6724f030e" />
 
 ### Verify Installation
 
 ```bash
 nmap --version
 ```
-<img width="1001" height="145" alt="nmap --version" src="https://github.com/user-attachments/assets/ee2ebd64-5d1e-48d3-81e7-815b5e3bb138" />
+<img width="1125" height="141" alt="nmap --ver" src="https://github.com/user-attachments/assets/ff44a8a3-3628-48c8-be4f-d0cdac1a5d3e" />
 
 ---
 
@@ -42,7 +42,7 @@ nmap [Options] <Target>
 
 Example:
 
-<img width="899" height="538" alt="nmap meta " src="https://github.com/user-attachments/assets/87c4f77b-e902-4714-85f0-e35de0af2001" />
+<img width="752" height="178" alt="nmap --help" src="https://github.com/user-attachments/assets/4715c69a-6b28-42cb-82c4-2ca15ac4b81b" />
 
 ```
 
@@ -53,6 +53,8 @@ Example:
 ```bash
 nmap <Target IP >
 ```
+<img width="865" height="545" alt="Nmap ip " src="https://github.com/user-attachments/assets/816209e8-234c-4fe9-b176-9173e7496123" />
+
 
 ### Scan multiple hosts
 
@@ -60,18 +62,21 @@ nmap <Target IP >
 nmap <Targer IP > <Target IP 2 >
 ```
 
+
 ### Scan a subnet
 
 ```bash
-nmap 192.168.0.0/24
-...
-<img width="570" height="687" alt="nmap " src="https://github.com/user-attachments/assets/0b742928-1d4f-4663-b6d6-131785992556" />
+nmap <Target IP >
+```
 
-...
+Example
+<img width="870" height="701" alt="nmap " src="https://github.com/user-attachments/assets/060b69dd-5d34-4621-98e7-625cd49b754b" />
+
+```
 ### Scan specific ports
 
 ```
-<img width="644" height="186" alt="nmap - p " src="https://github.com/user-attachments/assets/bb2e234b-61e5-4bfc-9887-bb15f7bd0ff7" />
+<img width="672" height="196" alt="nmap -p " src="https://github.com/user-attachments/assets/7853fd32-6586-46a0-9855-2f4fdae543f6" />
 
 
 ### Scan all ports
@@ -79,37 +84,41 @@ nmap 192.168.0.0/24
 ```bash
 nmap -p- <Target IP >
 ```
-<img width="989" height="656" alt="nmap -p- " src="https://github.com/user-attachments/assets/c307fe84-bb6a-42d8-939f-35a989f056b3" />
+<img width="777" height="650" alt="nmap -p-" src="https://github.com/user-attachments/assets/0ad48e32-d767-49c2-9c14-e4f317693d11" />
 
 
 ### Service detection
 
 ```bash
-nmap -sV 192.168.1.10
+nmap -sV <Target IP >
 ```
+<img width="1024" height="565" alt="nmap -sV " src="https://github.com/user-attachments/assets/68368cf9-9376-47fe-9c29-c0efb14ef02e" />
 
 ### OS detection
 
 ```bash
-nmap -O 192.168.1.10
+nmap -O <Target IP >
 ```
+<img width="847" height="639" alt="nmap -O" src="https://github.com/user-attachments/assets/792e6301-d284-48be-a98b-2118724f6cd4" />
 
 ### Aggressive scan
 
 ```bash
-nmap -A 192.168.1.10
+nmap -A <Target IP >
 ```
+<img width="1216" height="681" alt="nmap -A " src="https://github.com/user-attachments/assets/f27a844d-dcf2-4511-8595-6de2a8d641da" />
 
 ### SYN Scan
 
 ```bash
-nmap -sS 192.168.1.10
+nmap -sS <Target IP >
 ```
+<img width="807" height="535" alt="nmap -sS " src="https://github.com/user-attachments/assets/e2602d33-a3f0-491d-adb9-85df672e0710" />
 
 ### UDP Scan
 
 ```bash
-nmap -sU 192.168.1.10
+nmap -sU <Target IP >
 ```
 
 ---
@@ -117,11 +126,12 @@ nmap -sU 192.168.1.10
 ## Useful NSE Scripts
 
 ```bash
-nmap --script vuln 192.168.1.10
+nmap --script vuln <Target IP >
 ```
+<img width="967" height="709" alt="nmap --script" src="https://github.com/user-attachments/assets/c933ddb5-0245-48ca-a5c5-562d6f85035e" />
 
 ```bash
-nmap --script smb-enum-shares 192.168.1.10
+nmap --script smb-enum-shares <Target IP >
 ```
 
 ---
@@ -131,6 +141,7 @@ nmap --script smb-enum-shares 192.168.1.10
 - `-sV` is one of the most useful options during enumeration.
 - `-A` is useful but slower because it performs multiple detection techniques.
 - `-p-` scans all 65535 ports.
+- #The Target IP is MetaSploitable2 
 
 ---
 
