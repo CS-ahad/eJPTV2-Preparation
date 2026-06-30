@@ -69,7 +69,7 @@ nmap <Targer IP > <Target IP 2 >
 nmap <Target IP >
 ```
 
-Example
+Example:
 <img width="870" height="701" alt="nmap " src="https://github.com/user-attachments/assets/060b69dd-5d34-4621-98e7-625cd49b754b" />
 
 ```
