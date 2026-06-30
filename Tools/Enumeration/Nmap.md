@@ -23,6 +23,11 @@ Nmap (Network Mapper) is an open-source tool used for network discovery, host id
 ```bash
 sudo apt install nmap
 ```
+
+*Description:*
+Installs Nmap on Debian-based Linux distributions such as Kali Linux.
+
+###output
 <img width="823" height="181" alt="nmap install" src="https://github.com/user-attachments/assets/c8d6c5c9-7654-47c2-aedd-6cb6724f030e" />
 
 ### Verify Installation
